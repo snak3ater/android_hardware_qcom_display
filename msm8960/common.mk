@@ -16,7 +16,7 @@ common_libs := liblog libutils libcutils libhardware
 common_flags := -DDEBUG_CALC_FPS -Wno-missing-field-initializers
 common_flags += -Werror
 
-ifneq ($(filter 4.8 4.8.% 4.9 4.9.%, $(TARGET_GCC_VERSION)),)
+ifneq ($(filter 4.8 4.8.% 4.9 4.9.%, $(TARGET_GCC_VERSION_AND)),)
 common_flags += -Wno-error=unused-parameter
 endif
 
